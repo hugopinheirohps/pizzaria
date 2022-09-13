@@ -1,0 +1,22 @@
+✔ criar uma rota get para pizzas:id direcionando para pizzacontroler.show
+✔ criar uma rota get para pizzas/busca direcionando para pizzacontroler.search
+// ☐ criar uma rota get para usuarios/:id direcionando para usuarioscontroller.show
+
+✔ criar o controller show e search detro de pizzasController
+
+✔ A função show deve: @done(22-08-25 12:10)
+- Levantar o id que veio no parâmetro de rota (req.params.id)
+- Encontrar no array de pizzas a pizza que tem o id desejado (pizzas.find)
+- Retornar a view pizza.ejs, a pizza encontrada no passo anterior para essa view
+
+✔ A função search do PizzasController deve:
+- Levantar o trecho que está sendo buscado (req.query.q)
+- Filtrar as pizzas para obter somente as pizzas com esse trecho
+- retornar a view index.ejs, passando para ela somente as pizzas filtradas
+
+✔ novas funções
+- Criar um arquivo RegistraHoraDeAcesso.js. Nele, 
+- escrever uma função middleware que
+- registre no arquivo acessos.txt o horário em 
+- que cada requisição é recebida pelo servidor.
+- Formato da hora: AAAA-MM-DD HH:mm:sss
